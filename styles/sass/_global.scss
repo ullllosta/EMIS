@@ -4,128 +4,131 @@
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat Alternates', sans-serif;
-    color: #000;
-    font-size: 20px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #000;
+  font-size: 20px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .active-page {
-    font-weight: 700;
-    position: relative;
+  font-weight: 700;
+  position: relative;
 
-    &::before {
-        content: '';
-        width: 100%;
-        height: 1px;
-        position: absolute;
-        bottom: -4px;
-        background-color: #fff;
-    }
+  &::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: -4px;
+    background-color: #fff;
+  }
 }
 
 .brand-text {
-    color: $brendColor;
-    font-size: 28px;
-    font-family: Montserrat Alternates;
-    font-weight: 500;
+  color: $brendColor;
+  font-size: 23px;
+  font-family: Montserrat Alternates;
+  font-weight: 500;
+}
+
+.brand-title {
+  color: #097e77;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  max-width: 700px;
+
+  &--decor {
+    &::after {
+      content: '';
+      background-image: url(../../images/icons/abstract-decoration.svg);
+      width: 177px;
+      height: 78px;
+      position: absolute;
+      left: -190px;
+      top: 10px;
+    }
+
+    &-before {
+      padding-right: 20px;
+
+      &::after {
+        left: auto;
+        right: -150px;
+      }
+    }
+  }
 }
 
 .button-aqua {
-    color: $darkGreen;
-    font-size: 22px;
-    font-weight: 400;
-    background-color: $brendButton;
-    padding: 15px 35px;
-    border-radius: 27px;
-    box-shadow: 0px 7.1203107833862305px 31.64582633972168px rgba(80.08, 252.88, 201.04, 0.24);
-    transition: all ease 0.3s;
+  color: $white;
+  font-size: 22px;
+  font-weight: 400;
+  background-color: $brendButton;
+  padding: 15px 35px;
+  border-radius: 27px;
+  box-shadow: 0px 7.1203107833862305px 31.64582633972168px
+    rgba(80.08, 252.88, 201.04, 0.24);
+  transition: all ease 0.3s;
 
-    &:hover {
-        background-color: #55F4D7;
-        scale: 1.03;
-    }
-    &:active {
-        background-color: $brendButton;
-        scale: 1;
-    }
+  &:hover {
+    background-color: #55f4d7;
+    scale: 1.03;
+  }
+  &:active {
+    background-color: $brendButton;
+    scale: 1;
+  }
 }
 
 .container {
-    width: 100%;
-    max-width: 1284px;
-    padding: 0 50px;
-    margin: 0 auto;
-    display: flex;
-    position: relative;
+  width: 100%;
+  max-width: 1284px;
+  padding: 0 50px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    border: 0;
-    clip: rect(0 0 0 0);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .center {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .items {
-    &-center {
-        align-items: center;
-    }
+  &-center {
+    align-items: center;
+  }
 
-    &-column {
-        flex-direction: column;
-    }
+  &-column {
+    flex-direction: column;
+  }
 
-    &-wrap {
-        flex-wrap: wrap;
-    }
+  &-wrap {
+    flex-wrap: wrap;
+  }
 
-    &-start {
-        align-items: start;
-    }
-}
-
-.title-abstract-decor {
-    color: #097e77;
-    font-size: 38px;
-    font-weight: 600;
-    position: relative;
-    max-width: 700px;
-
-    &::after {
-        content: '';
-        background-image: url(/images/abstract-decoration.svg);
-        width: 177px;
-        height: 78px;
-        position: absolute;
-        left: -190px;
-        top: 10px;
-    }
-
-    &--before {
-        padding-right: 20px;
-    }
-
-    &--before::after {
-        left: auto;
-        right: -150px;
-    }
+  &-start {
+    align-items: start;
+  }
 }

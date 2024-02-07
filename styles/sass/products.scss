@@ -1,0 +1,88 @@
+@import './global';
+@import './variables';
+@import './header';
+@import './footer';
+
+// SLIDER
+
+.products-slider {
+  height: 1520px;
+  background:  url(../../images/backgrounds/dark-filter.png) no-repeat center fixed, url(../../images/backgrounds/carpet.jpg) no-repeat center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.blur {
+  backdrop-filter: blur(3px);
+  margin-top: 100px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.slider__container {
+  width: 1585px;
+  padding-top: 100px;
+}
+
+.slide {
+  &__text {
+    padding: 15px 12px;
+    position: absolute;
+    bottom: 0;
+
+    & > * {
+      color: white;
+    }
+  }
+
+  &__name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 7px;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+
+  &__price {
+    font-weight: 400;
+    font-size: 19px;
+  }
+}
+
+.swiper {
+  &-wrapper {
+    width: 1585px;
+  }
+
+  &-slide {
+    height: 540px;
+    transition: transform 0.2s;
+    transform: scale(0.74);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &.active {
+      transform: scale(1);
+    }
+
+    &-next {
+      transform: translateX(15px) scale(0.84) !important;
+    }
+
+    &-prev {
+      transform: translateX(-15px) scale(0.84) !important;
+    }
+  }
+}
