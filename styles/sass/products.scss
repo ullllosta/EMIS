@@ -6,8 +6,9 @@
 // SLIDER
 
 .products-slider {
-  height: 1520px;
-  background:  url(../../images/backgrounds/dark-filter.png) no-repeat center fixed, url(../../images/backgrounds/carpet.jpg) no-repeat center fixed;
+  height: 860px;
+  background: url(/images/backgrounds/dark-filter.png) no-repeat center fixed,
+    url(/images/backgrounds/carpet.jpg) no-repeat center fixed;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -23,9 +24,37 @@
   justify-content: center;
 }
 
-.slider__container {
-  width: 1585px;
-  padding-top: 100px;
+.slider {
+  &__container {
+    width: 1585px;
+    padding-top: 100px;
+    height: fit-content;
+    user-select: none;
+  }
+
+  &__navigation {
+    position: absolute;
+    top: 353px;
+    max-width: 1500px;
+    width: 100%;
+    z-index: 2;
+    left: 50%;
+    transform: translate(-50%);
+
+    .navigation__prev,
+    .navigation__next {
+      cursor: pointer;
+      position: absolute;
+    }
+
+    .navigation__prev {
+      left: 15px;
+      transform: rotate(180deg);
+    }
+    .navigation__next {
+      right: 15px;
+    }
+  }
 }
 
 .slide {
@@ -65,7 +94,8 @@
   &-slide {
     height: 540px;
     transition: transform 0.2s;
-    transform: scale(0.74);
+    transform: scale(0.74) !important;
+    box-shadow: -3px 10px 5px 0 rgba(0, 0, 0, 0.25);
 
     img {
       width: 100%;
@@ -74,15 +104,261 @@
     }
 
     &.active {
-      transform: scale(1);
+      transform: scale(1) !important;
+      box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.5);
     }
 
     &-next {
       transform: translateX(15px) scale(0.84) !important;
+      box-shadow: -8px 8px 5px 0 rgba(0, 0, 0, 0.25);
     }
 
     &-prev {
+      box-shadow: -8px 8px 5px 0 rgba(0, 0, 0, 0.25);
       transform: translateX(-15px) scale(0.84) !important;
     }
   }
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 56px;
+  z-index: 100;
+
+  span {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+    margin: 0px 4px !important;
+    background-color: rgba(229, 225, 224, 0.3);
+    transition: 0.2s;
+
+    &.swiper-pagination-bullet-active {
+      background-color: transparent;
+      background-color: rgba(229, 225, 224, 1);
+    }
+  }
+}
+
+// Products Information
+
+.products-information {
+  background: url(/images/backgrounds/backg-delivery.jpg) no-repeat center;
+  padding: 15px 0 40px;
+
+  .container {
+    text-align: center;
+    justify-content: center;
+    padding: 0 150px;
+  }
+
+  &__text {
+    max-width: 550px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 33px;
+    color: $brendColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    margin-bottom: 10px;
+
+    &::before {
+      content: '';
+      background: url(/images/icons/EMIS-circle.svg) no-repeat;
+      width: 69px;
+      height: 69px;
+      display: block;
+    }
+  }
+
+  &__description {
+    font-weight: 500;
+    font-size: 23px;
+    text-align: center;
+    color: #094b47;
+  }
+
+  &__cards {
+    margin-top: 90px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__card {
+    width: 263px;
+    height: 210px;
+    border-radius: 21px;
+    background-color: #fff;
+    padding: 15px 9px;
+
+    h3 {
+      font-weight: 600;
+      font-size: 21px;
+      color: $brendColor;
+      margin-bottom: 6px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      color: #0f403d;
+      margin-bottom: 13px;
+    }
+
+    span {
+      font-size: 16px;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    a:first-child {
+      color: #fff;
+      background-color: #2bc9ad;
+      width: 140px;
+      border-radius: 100px 10px 10px 100px;
+    }
+
+    a:last-child {
+      border-radius: 10px 100px 100px 10px;
+    }
+
+    a {
+      background-color: #1d9982;
+      box-shadow: 0 5px 23px 0 rgba(80, 253, 201, 0.24);
+      width: 28px;
+      height: 37px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 2px;
+    }
+  }
+
+  .small-map {
+    cursor: pointer;
+    border-radius: 13px;
+    border: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    margin: 0 auto;
+
+    img {
+      width: 207px;
+      height: 100px;
+    }
+  }
+}
+
+// Products Items 
+
+.products-box {
+  background: url(/images/backgrounds/carpet-v2.jpg) no-repeat center fixed;
+  background-size: cover;
+
+  .container {
+    height: 100%;
+    padding: 56px 0 0;
+    max-width: 1330px;
+  }
+
+  .products {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 42px 60px;
+      list-style: none;
+      padding: 0 48px;
+      overflow: hidden;
+      max-height: 680px;
+      transition: max-height ease 1s;
+    }
+
+    &__item {
+      width: 263px;
+      height: 318px;
+      backdrop-filter: blur(7px);
+      background: rgba(0, 0, 0, 0.34);
+      border-radius: 5px;
+      padding: 20px;
+    }
+
+    &__image {
+      width: 223px;
+      height: 183px;
+      border-radius: 5px;
+      margin-bottom: 3px;
+    }
+
+    &__name {
+      font-weight: 600;
+      font-size: 14px;
+      color: #fff;
+
+      &::after {
+        content: '';
+        background-color: #fff;
+        width: 100%;
+        height: 1px;
+        display: block;
+        margin: 5px 0;
+      }
+    }
+
+    &__description {
+      font-weight: 600;
+      font-size: 12px;
+      color: #fff;
+      margin-bottom: 5px;
+    }
+
+    &__characteristics {
+      display: flex;
+      justify-content: space-between;
+
+      &--coffee {
+        flex-direction: column;
+        gap: 2px;
+        span {
+          display: block;
+          width: 100%;
+        }
+      }
+
+      span {
+        color: #fff;
+        font-weight: 600;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.more-products {
+  border: none;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  width: 140px;
+  height: 54px;
+  backdrop-filter: blur(7px);
+  background: rgba(0, 0, 0, 0.34);
+  margin: 46px auto;
+  transition: margin 0.5s;
+  cursor: pointer;
 }

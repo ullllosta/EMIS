@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>EMIS | акции</title>
+    <link rel="stylesheet" href="styles/css/shares.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container items-start">
+        <button class="burger_menu_button burger_menu_button_close"></button>
+        <picture class="about-page-logo">
+          <source
+            srcset="images/icons/EMIS_mobile.svg"
+            media="(max-width: 1000px)"
+          />
+          <img src="images/icons/EMIS-v1.svg" alt="EMIS логотип" />
+        </picture>
+        <div class="header__menu">
+          <nav class="navigation">
+            <ol class="navigation__list">
+              <li class="navigation__item">
+                <a href="index.html">О нас</a>
+              </li>
+              <li class="navigation__item">
+                <a href="products.html">Продукция</a>
+              </li>
+              <li class="navigation__item">
+                <a class="active-page" href="shares.html">Акции</a>
+              </li>
+              <li class="navigation__item">
+                <a href="contacts.html">Контакты</a>
+              </li>
+            </ol>
+          </nav>
+          <a href="#" class="email-link">P.EMIS@GMAIL.RU </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="shares">
+        <div class="container items-column items-center">
+          <div class="shares__text">
+            <h1 class="shares__title">Сэкономьте до 20%</h1>
+            <p class="shares__description">
+              Уникальные предложения на уникальные восточные печенья!
+            </p>
+          </div>
+          <ul class="shares__cards">
+            <!-- СОДЕРЖИМОЕ ДОБАВЯЕТСЯ С ПОМОЩЬЮ shares-modals.js -->
+          </ul>
+        </div>
+        <div class="shares__modals">
+          <!-- СОДЕРЖИМОЕ ДОБАВЯЕТСЯ С ПОМОЩЬЮ shares-modals.js -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <ol class="footer__list">
+          <li class="footer__item footer-logo">
+            <img src="images/icons/EMIS-v2.svg" alt="EMIS" />
+            <p>больше чем пекарня</p>
+          </li>
+          <li class="footer__item footer__navigation">
+            <ol class="footer__navigation__list">
+              <li class="footer__navigation__item">
+                <a href="index.html">о нас</a>
+              </li>
+              <li class="footer__navigation__item">
+                <a href="products.html">продукция</a>
+              </li>
+              <li class="footer__navigation__item">
+                <a class="active-page" href="/shares.html">акции</a>
+              </li>
+              <li class="footer__navigation__item"><a href="#">контакты</a></li>
+            </ol>
+          </li>
+          <li class="footer__item footer__contact-numbers">
+            <div>
+              <p>
+                телефон для справок: +7(908) 510 84 43
+                <span>ежедневно с 8 до 20</span>
+              </p>
+            </div>
+            <div>
+              <p>
+                телефон для доставки: +7(908) 510 84 43
+                <span>ежедневно с 8 до 20</span>
+              </p>
+            </div>
+          </li>
+          <li class="footer__item footer__contacts">
+            <a href="#">
+              <img src="images/icons/whatsApp.svg" alt="whatsApp" />
+            </a>
+            <a href="#">
+              <img src="images/icons/VK.svg" alt="Вконтакте" />
+            </a>
+            <a href="#">
+              <img src="images/icons/Instagram.svg" alt="Инстаграм" />
+            </a>
+          </li>
+        </ol>
+      </div>
+    </footer>
+    <script src="scripts/burger-menu.js"></script>
+    <script src="scripts/shares.js"></script>
+  </body>
+</html>

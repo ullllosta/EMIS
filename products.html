@@ -1,33 +1,40 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="ru">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>EMIS</title>
+    <title>EMIS | продукция</title>
     <link rel="stylesheet" href="styles/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/css/products.min.css" />
   </head>
   <body>
     <header class="header">
       <div class="container items-start">
-        <img
-          class="about-page-logo"
-          src="images/icons/EMIS-v1.svg"
-          alt="EMIS логотип"
-        />
-        <nav class="navigation">
-          <ol class="navigation__list">
-            <li class="navigation__item">
-              <a href="/index.html">О нас</a>
-            </li>
-            <li class="navigation__item">
-              <a class="active-page" href="/products.html">Продукция</a>
-            </li>
-            <li class="navigation__item"><a href="#">Акции</a></li>
-            <li class="navigation__item"><a href="#">Контакты</a></li>
-          </ol>
-        </nav>
-        <a href="#" class="email-link">P.EMIS@GMAIL.RU </a>
+        <button class="burger_menu_button burger_menu_button_close"></button>
+        <picture class="about-page-logo">
+          <source
+            srcset="images/icons/EMIS_mobile.svg"
+            media="(max-width: 1000px)"
+          />
+          <img src="images/icons/EMIS-v1.svg" alt="EMIS логотип" />
+        </picture>
+        <div class="header__menu">
+          <nav class="navigation">
+            <ol class="navigation__list">
+              <li class="navigation__item">
+                <a href="index.html">О нас</a>
+              </li>
+              <li class="navigation__item">
+                <a class="active-page" href="products.html">Продукция</a>
+              </li>
+              <li class="navigation__item"><a href="shares.html">Акции</a></li>
+              <li class="navigation__item">
+                <a href="contacts.html">Контакты</a>
+              </li>
+            </ol>
+          </nav>
+          <a href="#" class="email-link">P.EMIS@GMAIL.RU </a>
+        </div>
       </div>
     </header>
 
@@ -35,6 +42,14 @@
       <section class="products-slider slider">
         <div class="blur">
           <div class="slider__container">
+            <div class="slider__navigation">
+              <div class="navigation__prev">
+                <img src="images/icons/slider-arrow.svg" alt="Назад" />
+              </div>
+              <div class="navigation__next">
+                <img src="images/icons/slider-arrow.svg" alt="Далее" />
+              </div>
+            </div>
             <div class="swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -225,7 +240,93 @@
                 </div>
               </div>
             </div>
+            <div class="pagination"></div>
           </div>
+        </div>
+      </section>
+      <section class="products-information">
+        <div class="container items-column items-center">
+          <div class="products-information__text">
+            <h2 class="products-information__title">КАК ЗАКАЗАТЬ</h2>
+            <p class="products-information__description">
+              Уважаемые гости! На данный момент мы не осуществляем доставку
+              через наш сайт. Вот что мы можем Вам предложить:
+            </p>
+          </div>
+          <ul class="products-information__cards">
+            <li class="products-information__card">
+              <h3>ГДЕ НАС ИСКАТЬ</h3>
+              <p>Наша пекарня представлена на таких платформах как:</p>
+              <a href="#">
+                <img
+                  width="44"
+                  src="images/icons/Yandex-logo.jpg"
+                  alt="Яндекс Доставка"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="images/icons/SberMarket-icon.png"
+                  width="44"
+                  alt="СберМаркет"
+                />
+              </a>
+            </li>
+            <li class="products-information__card">
+              <h3>НАПИСАТЬ НАМ</h3>
+              <p>
+                об интересующих позициях в соцсети. Мы с радостью Вас
+                проконсультируем и осуществим доставку за
+                <span class="brand-text">Ваш счет.</span>
+              </p>
+              <div class="products-information__contacts">
+                <a target="_blank" href="tel:+79612878778">Связаться</a>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/pahlava_emis/"
+                >
+                  <img src="images/icons/Instagram-v2.svg" alt="Инстаграм" />
+                </a>
+                <a target="_blank" href="https://vk.com/pahlava_emis">
+                  <img src="images/icons/VK-v2.svg" alt="Вконтакте" />
+                </a>
+              </div>
+            </li>
+            <li class="products-information__card">
+              <h3>ПРИЙТИ В ГОСТИ</h3>
+              <p>г. Ростов-на-Дону ул.Московская 55</p>
+              <button class="small-map">
+                <img
+                  class="small-map"
+                  src="images/decor/small-map.jpg"
+                  alt="Карта"
+                />
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="products-box">
+        <div class="container items-column products-container">
+          <ul class="products__list">
+            <!-- СОДЕРЖИМОЕ ДОБАВЯЕТСЯ С ПОМОЩЬЮ products-items.js -->
+          </ul>
+          <button class="more-products">
+            смотреть еще
+            <svg
+              width="20"
+              height="11"
+              viewBox="0 0 20 11"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.9941 1.00269L10.7216 9.2868C10.3314 9.6776 9.69823 9.67805 9.30744 9.2878L0.999706 0.991727"
+                stroke="white"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
         </div>
       </section>
     </main>
@@ -245,8 +346,12 @@
               <li class="footer__navigation__item">
                 <a class="active-page" href="products.html">продукция</a>
               </li>
-              <li class="footer__navigation__item"><a href="#">акции</a></li>
-              <li class="footer__navigation__item"><a href="#">контакты</a></li>
+              <li class="footer__navigation__item">
+                <a href="shares.html">акции</a>
+              </li>
+              <li class="footer__navigation__item">
+                <a href="contacts.html">контакты</a>
+              </li>
             </ol>
           </li>
           <li class="footer__item footer__contact-numbers">
@@ -277,7 +382,9 @@
         </ol>
       </div>
     </footer>
+    <script src="scripts/burger-menu.js"></script>
     <script src="scripts/swiper-bundle.min.js"></script>
     <script src="scripts/products-slider.js"></script>
+    <script src="scripts/products-items.js"></script>
   </body>
 </html>
