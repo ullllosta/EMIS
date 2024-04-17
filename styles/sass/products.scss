@@ -7,19 +7,23 @@
 
 .products-slider {
   height: 860px;
-  background: url(/images/backgrounds/dark-filter.png) no-repeat center fixed,
-    url(/images/backgrounds/carpet.jpg) no-repeat center fixed;
+  background: url(../../images/backgrounds/dark-filter.png) no-repeat center
+      fixed,
+    url(../../images/backgrounds/carpet.jpg) no-repeat center fixed;
   background-size: cover;
   display: flex;
   justify-content: center;
   overflow: hidden;
+
+  @media (max-width: 550px) {
+    height: 730px;
+  }
 }
 
 .blur {
   backdrop-filter: blur(3px);
   margin-top: 100px;
   width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
 }
@@ -30,6 +34,9 @@
     padding-top: 100px;
     height: fit-content;
     user-select: none;
+    @media (max-width: 550px) {
+      padding-top: 60px;
+    }
   }
 
   &__navigation {
@@ -53,6 +60,10 @@
     }
     .navigation__next {
       right: 15px;
+    }
+
+    @media (max-width: 550px) {
+      top: 270px;
     }
   }
 }
@@ -117,6 +128,10 @@
       box-shadow: -8px 8px 5px 0 rgba(0, 0, 0, 0.25);
       transform: translateX(-15px) scale(0.84) !important;
     }
+
+    @media (max-width: 550px) {
+      height: 460px;
+    }
   }
 }
 
@@ -145,13 +160,18 @@
 // Products Information
 
 .products-information {
-  background: url(/images/backgrounds/backg-delivery.jpg) no-repeat center;
-  padding: 15px 0 40px;
+  background: url(../../images/backgrounds/qwerty.jpg) no-repeat center;
+  background-size: cover;
+  max-width: 1140px;
+  margin: 0 auto;
 
   .container {
     text-align: center;
     justify-content: center;
-    padding: 0 150px;
+
+    backdrop-filter: blur(0px);
+    background: rgba(0, 0, 0, 0.21);
+    padding: 25px 0 55px;
   }
 
   &__text {
@@ -161,40 +181,35 @@
   &__title {
     font-weight: 600;
     font-size: 33px;
-    color: $brendColor;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 9px;
     margin-bottom: 10px;
-
-    &::before {
-      content: '';
-      background: url(/images/icons/EMIS-circle.svg) no-repeat;
-      width: 69px;
-      height: 69px;
-      display: block;
-    }
   }
 
   &__description {
     font-weight: 500;
     font-size: 23px;
     text-align: center;
-    color: #094b47;
+    color: #fff;
   }
 
   &__cards {
-    margin-top: 90px;
+    margin-top: 70px;
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px 60px;
     width: 100%;
+    max-width: 1040px;
+    padding: 0 10px;
   }
 
   &__card {
-    width: 263px;
-    height: 210px;
+    width: 300px;
     border-radius: 21px;
     background-color: #fff;
     padding: 15px 9px;
@@ -255,20 +270,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
     margin: 0 auto;
 
     img {
-      width: 207px;
-      height: 100px;
+      max-height: 100px;
+    }
+  }
+
+  @media (max-width: 1040px) {
+    &__cards {
+      margin-top: 30px;
     }
   }
 }
 
-// Products Items 
+// Products Items
 
 .products-box {
-  background: url(/images/backgrounds/carpet-v2.jpg) no-repeat center fixed;
+  background: url(../../images/backgrounds/carpet-v2.jpg) no-repeat center fixed;
   background-size: cover;
 
   .container {
@@ -281,26 +300,30 @@
     &__list {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 42px 60px;
       list-style: none;
       padding: 0 48px;
       overflow: hidden;
-      max-height: 680px;
+      max-height: 770px;
       transition: max-height ease 1s;
     }
 
     &__item {
-      width: 263px;
-      height: 318px;
+      max-width: 263px;
+      min-width: 315px;
       backdrop-filter: blur(7px);
       background: rgba(0, 0, 0, 0.34);
       border-radius: 5px;
       padding: 20px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
     }
 
     &__image {
-      width: 223px;
-      height: 183px;
+      max-width: 100%;
       border-radius: 5px;
       margin-bottom: 3px;
     }
@@ -344,6 +367,25 @@
         color: #fff;
         font-weight: 600;
         font-size: 12px;
+      }
+    }
+    @media (max-width: 1150px) {
+      &__list {
+        padding: 0;
+        max-height: 1160px;
+      }
+    }
+    @media (max-width: 800px) {
+      &__list {
+        padding: 0;
+        max-height: 2000px;
+      }
+      &__item {
+        max-width: 65%;
+        max-height: 65%;
+      }
+      &__image {
+        max-height: 100%;
       }
     }
   }

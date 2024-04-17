@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width" />
     <title>EMIS | контакты</title>
     <link rel="stylesheet" href="styles/css/contacts.min.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="images/favicons/favicon-16.svg"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="images/favicons/favicon-32.svg"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="images/favicons/favicon-152.svg"
+      sizes="152x152"
+    />
   </head>
   <body>
     <header class="header">
@@ -13,7 +31,7 @@
         <picture class="about-page-logo">
           <source
             srcset="images/icons/EMIS_mobile.svg"
-            media="(max-width: 1000px)"
+            media="(max-width: 1030px)"
           />
           <img src="images/icons/EMIS-v1.svg" alt="EMIS логотип" />
         </picture>
@@ -87,16 +105,13 @@
               <li class="contacts__item">
                 <div>
                   <a href="#" target="_blank">
-                    <img src="images/icons/whatsApp_green.svg" alt="whatsApp" />
+                    <img src="images/icons/whatsApp.svg" alt="whatsApp" />
                   </a>
                   <a href="#" target="_blank">
-                    <img src="images/icons/VK_green.svg" alt="Вконтакте" />
+                    <img src="images/icons/VK.svg" alt="Вконтакте" />
                   </a>
                   <a href="#" target="_blank">
-                    <img
-                      src="images/icons/Instagram_green.svg"
-                      alt="Инстаграм"
-                    />
+                    <img src="images/icons/Instagram.svg" alt="Инстаграм" />
                   </a>
                 </div>
               </li>
@@ -106,7 +121,7 @@
             <iframe
               src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab0eae08f583407b4ab48bcee6115c322ac0ec5cd9f3233e0fd2d0097fcf40dab&amp;source=constructor"
               width="100%"
-              height="411"
+              height="100%"
               frameborder="0"
             ></iframe>
           </div>
@@ -117,11 +132,8 @@
     <footer class="footer">
       <div class="container">
         <ol class="footer__list">
-          <li class="footer__item footer-logo">
+          <li class="footer__item footer-logo footer__navigation">
             <img src="images/icons/EMIS-v2.svg" alt="EMIS" />
-            <p>больше чем пекарня</p>
-          </li>
-          <li class="footer__item footer__navigation">
             <ol class="footer__navigation__list">
               <li class="footer__navigation__item">
                 <a href="index.html">о нас</a>
@@ -137,30 +149,36 @@
               </li>
             </ol>
           </li>
-          <li class="footer__item footer__contact-numbers">
-            <div>
-              <p>
-                телефон для справок: +7(908) 510 84 43
-                <span>ежедневно с 8 до 20</span>
-              </p>
+          <li class="footer__item footer__phones">
+            <div class="footer__contact-numbers">
+              <div>
+                <p>
+                  телефон для справок: <span>+7(908) 510 84 43</span>
+                  <span class="footer__contact-numbers__time"
+                    >ежедневно с 8 до 20</span
+                  >
+                </p>
+              </div>
+              <div>
+                <p>
+                  телефон для доставки: <span>+7(908) 510 84 43</span>
+                  <span class="footer__contact-numbers__time"
+                    >ежедневно с 8 до 20</span
+                  >
+                </p>
+              </div>
             </div>
-            <div>
-              <p>
-                телефон для доставки: +7(908) 510 84 43
-                <span>ежедневно с 8 до 20</span>
-              </p>
+            <div class="footer__contacts">
+              <a href="#">
+                <img src="images/icons/whatsApp.svg" alt="whatsApp" />
+              </a>
+              <a href="#">
+                <img src="images/icons/VK.svg" alt="Вконтакте" />
+              </a>
+              <a href="#">
+                <img src="images/icons/Instagram.svg" alt="Инстаграм" />
+              </a>
             </div>
-          </li>
-          <li class="footer__item footer__contacts">
-            <a href="#">
-              <img src="images/icons/whatsApp.svg" alt="whatsApp" />
-            </a>
-            <a href="#">
-              <img src="images/icons/VK.svg" alt="Вконтакте" />
-            </a>
-            <a href="#">
-              <img src="images/icons/Instagram.svg" alt="Инстаграм" />
-            </a>
           </li>
         </ol>
       </div>

@@ -16,6 +16,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  min-width: 320px;
+}
+
 .active-page {
   font-weight: 700;
   position: relative;

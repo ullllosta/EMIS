@@ -9,6 +9,7 @@
   position: absolute;
   z-index: 2;
   width: 100%;
+  min-width: 320px;
   transition: height 0.1s;
   -webkit-transition: height 0.1s;
   -moz-transition: height 0.1s;
@@ -20,19 +21,15 @@
     color: $white;
   }
 
-  .email-link {
-    font-size: 16px;
-    font-family: 'Montserrat';
-  }
-
   &__menu {
     display: flex;
     width: 100%;
+    height: 100%;
+    gap: 30px;
+    @media (max-width: 1030px) {
+      gap: 0;
+    }
   }
-}
-
-.about-page-logo {
-  position: relative;
 }
 
 /* NAVIGATION */
@@ -40,6 +37,10 @@
 .navigation {
   max-width: 607px;
   width: 100%;
+  margin-left: 10px;
+  display: flex;
+  align-items: end;
+  padding-bottom: 17px;
 
   &__list {
     display: flex;
@@ -47,6 +48,7 @@
     padding-top: 60px;
     list-style: none;
     justify-content: space-between;
+    width: 100%;
   }
 
   &__item {
@@ -55,23 +57,21 @@
   }
 }
 
-.email-link {
+a.email-link {
+  font-size: 16px;
+  font-family: 'Montserrat';
   position: relative;
-  padding-right: 28px;
-  padding-bottom: 50px;
   margin-left: auto;
-  padding-left: 20px;
-  padding-top: 65px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 17px;
+  gap: 10px;
 
-  &::before {
+  &::after {
     content: '';
     background-image: url(/images/icons/email-logo.svg);
     height: 22px;
     width: 28px;
-    position: absolute;
-    bottom: 52px;
-    right: -5px;
-    z-index: 10;
   }
 }
 
@@ -81,7 +81,7 @@
   display: none;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1030px) {
   .header {
     overflow: hidden;
 
@@ -156,8 +156,7 @@
     }
 
     .email-link {
-      margin: 0 25px 0 0;
-      padding: 30px 0;
+      margin: 0 0 0 23px;
       font-size: 14px;
 
       &::before {

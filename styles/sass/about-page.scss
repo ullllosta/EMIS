@@ -5,8 +5,8 @@
 
 // WELCOME-SECTION
 
-.welcome- {
-  &section {
+.welcome {
+  &-section {
     position: relative;
     background: url(../../images/backgrounds/dark-filter.png),
       url(../../images/backgrounds/backg-aboutPage.jpg);
@@ -14,7 +14,6 @@
     padding: 250px 0 400px;
     background-size: cover;
     overflow-x: clip;
-    // box-shadow: 0px 6.329165458679199px 15.82291316986084px rgba(0, 0, 0, 0.25);
 
     &::before {
       content: '';
@@ -29,30 +28,83 @@
 
     &::after {
       content: '';
-      width: 1600px;
-      height: 385px;
+      width: 1670px;
+      height: 600px;
       position: absolute;
-      bottom: -150px;
+      bottom: -350px;
       left: 50%;
       transform: translate(-50%);
-      background: url(../../images/decor/flour.png) no-repeat left 10px bottom -70px,
-        url(../../images/decor/nuts.png) no-repeat right 40px bottom 100px;
+      background: url(../../images/decor/flour.png) no-repeat left 10px bottom
+          150px,
+        url(../../images/decor/nuts.png) no-repeat right 40px bottom 300px;
+
+      @media (max-width: 1150px) {
+        background: url(../../images/decor/flour.png) no-repeat left 120px
+            bottom 150px,
+          url(../../images/decor/nuts.png) no-repeat right 300px bottom 120px;
+      }
+
+      @media (max-width: 780px) {
+        transform: scale(0.9) translate(-58%);
+        -webkit-transform: scale(0.9) translate(-58%);
+        -moz-transform: scale(0.9) translate(-58%);
+        -ms-transform: scale(0.9) translate(-58%);
+        -o-transform: scale(0.9) translate(-58%);
+        background: url(../../images/decor/flour.png) no-repeat left 320px
+            bottom 100px,
+          url(../../images/decor/nuts.png) no-repeat right 250px bottom 250px;
+      }
+    }
+
+    .container {
+      @media (max-width: 770px) {
+        padding: 0 30px;
+        align-items: center;
+
+        .button-aqua {
+          font-size: 16px;
+        }
+      }
+    }
+
+    @media (max-width: 1000px) {
+      padding: 150px 0 250px;
+    }
+    @media (max-width: 770px) {
+      padding: 150px 0 100px;
     }
   }
 
-  &title {
+  &-title {
     color: $white;
     font-size: 47px;
     font-weight: 800;
     max-width: 700px;
+    width: 100%;
+
+    @media (max-width: 1220px) {
+      font-size: 37px;
+    }
+    @media (max-width: 770px) {
+      font-size: 24px;
+      text-align: center;
+    }
   }
 
-  &subtitle {
+  &-subtitle {
     color: $white;
     font-size: 29px;
     font-weight: 300;
     padding: 22px 0 40px;
     max-width: 700px;
+
+    @media (max-width: 1220px) {
+      font-size: 23px;
+    }
+    @media (max-width: 770px) {
+      font-size: 16px;
+      text-align: center;
+    }
   }
 }
 
@@ -75,34 +127,108 @@
       url(../../images/decor/sesame.png) no-repeat left -102px bottom -420px,
       url(../../images/decor/butter.png) no-repeat top 18% left 47%,
       url(../../images/icons/arrow.svg) no-repeat top 12% left 44%;
+
+    @media (max-width: 1240px) {
+      background: url(../../images/decor/flax-seeds.png) no-repeat right -50px bottom -65px,
+        url(../../images/decor/sesame.png) no-repeat left -102px bottom -420px;
+    }
+
+    @media (max-width: 1150px) {
+      height: 150%;
+      background: url(../../images/decor/flax-seeds.png) no-repeat left 150px
+          bottom 390px,
+        url(../../images/decor/sesame.png) no-repeat left 200px bottom -350px;
+    }
+
+    @media (max-width: 780px) {
+      transform: scale(0.8) translate(-65%);
+      -webkit-transform: scale(0.8) translate(-65%);
+      -moz-transform: scale(0.8) translate(-65%);
+      -ms-transform: scale(0.8) translate(-65%);
+      -o-transform: scale(0.8) translate(-65%);
+      background: url(../../images/decor/flax-seeds.png) no-repeat left 400px
+          bottom 600px,
+        url(../../images/decor/sesame.png) no-repeat left 200px bottom -350px;
+    }
+
+    @media (max-width: 580px) {
+      background: url(../../images/decor/flax-seeds.png) no-repeat left 400px
+          bottom 270px,
+        url(../../images/decor/sesame.png) no-repeat left 200px bottom -450px;
+    }
   }
 
   .container {
     justify-content: space-between;
     gap: 30px;
+
+    @media (max-width: 780px) {
+      padding-top: 130px;
+      gap: 200px;
+    }
+
+    @media (max-width: 1150px) {
+      flex-direction: column;
+    }
+
+    @media (max-width: 400px) {
+      padding: 130px 10px 0;
+    }
+
+    @media (max-width: 580px) {
+      padding-top: 70px;
+    }
   }
 
   &__article {
     position: relative;
-    left: 10px;
     width: fit-content;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    max-width: 472px;
+
+    @media (max-width: 1150px) {
+      max-width: 100%;
+      width: 100%;
+    }
 
     div {
       display: flex;
       flex-direction: column;
 
-      p {
+      h2 {
+        @media (max-width: 580px) {
+          min-width: 330px;
+          font-size: 20px;
+        }
+      }
+
+      p,
+      span {
+        max-width: 450px;
         font-size: 23px;
         font-weight: 300;
+
+        @media (max-width: 580px) {
+          font-size: 16px;
+          min-width: 330px;
+        }
       }
     }
 
     &:first-of-type {
-      max-width: 520px;
-
       div:last-of-type {
         max-width: 510px;
-        margin-top: 115px;
+        margin-top: 60px;
+
+        @media (max-width: 1150px) {
+          text-align: right;
+          align-self: flex-end;
+          display: flex;
+          align-items: flex-end;
+          margin-top: 30px;
+        }
 
         h2 {
           max-width: 400px;
@@ -111,43 +237,77 @@
     }
 
     &:last-of-type {
-      max-width: 470px;
-
       div:last-of-type {
         margin-top: 338px;
+
+        span {
+          @media (max-width: 550px) {
+            font-size: 16px;
+          }
+        }
+
+        @media (max-width: 1150px) {
+          margin-top: 0;
+          text-align: right;
+          align-self: flex-end;
+          display: flex;
+          align-items: flex-end;
+          margin-top: 30px;
+        }
       }
 
       padding-top: 40px;
     }
+  }
+
+  @media (max-width: 1150px) {
+    margin-bottom: 300px;
   }
 }
 
 // GALLERY
 
 .gallery {
-  display: grid;
-  grid-template-rows: 342px 270px;
-  /* Высота строк */
-  grid-gap: 9px;
-  /* Отступ между колонками */
-  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 
-  &__row {
-    display: grid;
-    grid-template-columns: 384px 270px 270px 270px;
-    /* Ширина столбцов */
+  max-height: 480px;
+  overflow: hidden;
+
+  @media (max-width: 730px) {
+    max-height: 100%;
+    overflow: visible;
   }
 
   &__article {
-    padding-right: 1px;
-    p {
-      font-size: 23px;
+    max-width: 472px;
+    p,
+    span {
+      font-size: 21px;
       font-weight: 300;
+    }
+
+    h3 {
+      @media (max-width: 580px) {
+        font-size: 20px;
+      }
     }
   }
 
   &__column {
     position: relative;
+
+    img {
+      width: 230px;
+      height: 230px;
+
+      @media (max-width: 490px) {
+        width: 145px;
+        height: 145px;
+      }
+    }
 
     img:last-of-type {
       position: absolute;
@@ -175,17 +335,26 @@
       }
 
       h6 {
-        font-size: 17px;
+        font-size: 16px;
         font-weight: 500;
         padding: 8px 10px 0;
         max-width: 240px;
       }
 
       p {
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 400;
         padding: 0 10px 10px;
         max-width: 240px;
+      }
+
+      @media (max-width: 490px) {
+        p {
+          font-size: 9px;
+        }
+        h6 {
+          font-size: 10px;
+        }
       }
 
       &--wide {
@@ -222,9 +391,35 @@
   background-size: cover;
   height: 554px;
 
+  @media (max-width: 970px) {
+    height: 762px;
+  }
+
   .container {
-    max-width: 1000px;
-    justify-content: space-between;
+    justify-content: flex-end;
+    height: inherit;
+    overflow: hidden;
+
+    & > div {
+      align-items: center;
+      justify-content: space-between;
+      display: flex;
+      max-width: 1040px;
+      width: 100%;
+      gap: 30px;
+      flex-wrap: wrap;
+      height: inherit;
+
+      @media (max-width: 970px) {
+        justify-content: center;
+        align-items: baseline;
+        gap: 60px;
+      }
+    }
+
+    @media (max-width: 550px) {
+      padding: 0 10px;
+    }
   }
 
   &__title {
@@ -232,6 +427,7 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    height: fit-content;
 
     h3 {
       max-width: 510px;
@@ -240,19 +436,32 @@
       text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.76);
       font-size: 33px;
       font-weight: 300;
+
+      @media (max-width: 550px) {
+        font-size: 20px;
+      }
     }
     a {
       font-size: 16px;
       font-weight: 500;
+      @media (max-width: 550px) {
+        font-size: 12px;
+      }
+    }
+
+    @media (max-width: 970px) {
+      margin-top: 35px;
     }
   }
 
   &__list {
     overflow: auto;
     overflow-x: hidden;
-    max-height: 554px;
     list-style: none;
     padding-right: 40px;
+    position: relative;
+    left: 27px;
+    height: inherit;
 
     &::-webkit-scrollbar {
       width: 11px;
@@ -278,11 +487,21 @@
         }
       }
     }
+
+    @media (max-width: 970px) {
+      height: 50%;
+      margin-top: -100px;
+    }
+
+    @media (max-width: 550px) {
+      position: static;
+      padding-right: 10px;
+      height: 62%;
+    }
   }
 
   &__item {
-    max-height: 215px;
-    width: 280px;
+    max-width: 280px;
     background-color: $white;
     margin: 8px 0;
     border-radius: 20px;
@@ -394,5 +613,23 @@
   &__text {
     font-weight: 500;
     font-size: 11px;
+
+    @media (max-width: 550px) {
+      font-size: 9px;
+    }
   }
+}
+
+main .container {
+  justify-content: center;
+
+  @media (max-width: 810px) {
+    padding: 0 10px;
+  }
+}
+
+.about__video {
+  max-width: 100%;
+  max-height: 670px;
+  margin: 20px 0 30px;
 }
