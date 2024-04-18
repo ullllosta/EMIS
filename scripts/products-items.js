@@ -2,10 +2,11 @@ const moreBtn = document.querySelector('.more-products');
 const productsList = document.querySelector('.products__list');
 
 moreBtn.addEventListener('click', () => {
-  productsList.style.maxHeight = '1760px';
+  productsList.style.maxHeight = `${productsList.scrollHeight}px`;
   moreBtn.style.transform = 'scale(0)';
 });
 
+// Массив карточек продукции
 const productsData = [
   {
     image: 'images/buns-coffe-list/cinnamon.jpg',
@@ -175,15 +176,19 @@ const productsData = [
   },
 ];
 
+// Перебираем массив продуктов
 productsData.forEach((item) => {
+  // Создаем новый элемент списка для продукта
   const productsItem = document.createElement('li');
   productsItem.classList.add('products__item');
 
+  // Добавляем разметку для изображения и названия продукта
   productsItem.innerHTML = `
       <img class="products__image" src="${item.image}" alt="${item.name}" />
       <h3 class="products__name">${item.name}</h3>
     `;
 
+  // Если есть описание продукта, добавляем его в разметку
   if (item.description) {
     productsItem.innerHTML += `
         <p class="products__description">${item.description}</p>
@@ -192,6 +197,7 @@ productsData.forEach((item) => {
           <span>${item.characteristics.price}</span>
         </div>
       `;
+    // Если нет описания, добавляем характеристики продукта в разметку
   } else {
     productsItem.innerHTML += `
         <div class="products__characteristics products__characteristics--coffee">
@@ -202,5 +208,129 @@ productsData.forEach((item) => {
       `;
   }
 
+  // Добавляем созданный элемент списка в контейнер продуктов
   productsList.appendChild(productsItem);
+});
+
+// Массив с данными слайдов
+const slides = [
+  {
+    img: 'images/cookie-slider/badambura.jpg',
+    title: 'Бадамбура миндаль',
+    description:
+      'каждый слой промазан топленым сливочным маслом, начинка - дробленный обжаренный миндаль с сахаром и мускатным орехом',
+    price: '40р / шт',
+  },
+  {
+    img: 'images/cookie-slider/chocolate-ball.jpg',
+    title: 'Курабье мегашоколад',
+    description: 'какао, отборный шоколад, натуральное сливочное масло',
+    price: '40р / шт',
+  },
+  {
+    img: 'images/cookie-slider/nuts-cookie.jpg',
+    title: 'Курабье с грецким орехом',
+    description:
+      'нежнейшее песочное печенье с дробленным грецким орехом в тесте, хорошо пропитанное сахарным сиропом',
+    price: '40р / шт',
+  },
+  {
+    img: 'images/cookie-slider/pahlava.jpg',
+    title: 'Пахлава Бакинская',
+    description:
+      'десять слоев нежнейшего теста, пропитанного топленым маслом, начинка - грецкий орех и пряности',
+    price: '1.200р / кг',
+  },
+  {
+    img: 'images/cookie-slider/pistachio.jpg',
+    title: 'Аджибадам миндаль',
+    description:
+      'белковое тесто без добавления муки, с добавлением молотого миндаля и фундука',
+    price: '40р / шт',
+  },
+  {
+    img: 'images/cookie-slider/banana-cookie.jpg',
+    title: 'Пахлава Бакинская',
+    description:
+      'десять слоев нежнейшего теста, пропитанного топленым маслом, начинка - грецкий орех и пряности',
+    price: '40р / шт',
+  },
+  {
+    img: 'images/cookie-slider/cocunt-cookie.jpg',
+    title: 'Банан с грецким орехом',
+    description:
+      'нежное, мягкое песочное печенье с добавлением крупной кокосовой стружки, пропитанное сахарным сиропом',
+    price: '40р / шт',
+  },
+  {
+    img: 'images/cookie-slider/hazelnut-cookie.jpg',
+    title: 'Шекербура фундук',
+    description:
+      'Нежное песочное тесто, которое обволакивает дробленый обжаренный фундук, смешанный с ароматным сахаром и нотками кардамона',
+    price: '40р / шт',
+  },
+  {
+    img: 'images/cookie-slider/kyata.jpg',
+    title: 'Кята умач',
+    description:
+      'песочное печенье, прослойка - сливочное масло, обжаренное в муке и сахаре',
+    price: '40р / шт',
+  },
+  {
+    img: 'images/cookie-slider/kyata-nuts.jpg',
+    title: 'Кята грецкий орех',
+    description:
+      'нежное песочное печенье с прослойкой из сливочного масла, обжаренного с мукой, сахаром и ароматным грецким орехом',
+    price: '40р / шт',
+  },
+  {
+    img: 'images/cookie-slider/milk-cookie.jpg',
+    title: 'Рулет сгущенка и орех',
+    description:
+      'слоеное тесто, смазанное топленым маслом, начинка - варёная сгущенка , грецкий орех',
+    price: '40р / шт',
+  },
+  {
+    img: 'images/cookie-slider/sesame-cookie.jpg',
+    title: 'Кунжутное',
+    description:
+      'песочное тесто с нежнейшим сливочным послевкусием, обвалено и выпечено в кунжуте',
+    price: '40р / шт',
+  },
+  {
+    img: 'images/cookie-slider/sandy-cookie.jpg',
+    title: 'Шекер черек',
+    description: 'нежное песочное печенье на сливочном масле',
+    price: '40р / шт',
+  },
+  {
+    img: 'images/cookie-slider/mutaki.jpg',
+    title: 'Пахлава Бакинская',
+    description:
+      'десять слоев нежнейшего теста, пропитанного топленым маслом, начинка - грецкий орех и пряности',
+    price: '40р / шт',
+  },
+];
+
+// Получаем контейнер слайдов
+const sliderContainer = document.querySelector('.swiper-wrapper');
+
+// Перебираем массив с данными слайдов
+slides.forEach((slide) => {
+  // Создаем новый элемент слайда
+  const slideElement = document.createElement('div');
+  slideElement.classList.add('swiper-slide');
+
+  // Добавляем разметку в элемент слайда
+  slideElement.innerHTML = `
+    <img src="${slide.img}" alt="${slide.title}" />
+    <div class="slide__text">
+      <h3 class="slide__name">${slide.title}</h3>
+      <p class="slide__description">${slide.description}</p>
+      <b class="slide__price">${slide.price}</b>
+    </div>
+  `;
+
+  // Добавляем элемент слайда в контейнер слайдов
+  sliderContainer.appendChild(slideElement);
 });

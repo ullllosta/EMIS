@@ -108,8 +108,6 @@ sharesModals.forEach((modal) => {
 
 const modalBtns = document.querySelectorAll('.shares__button');
 
-console.log('modalBtns');
-
 modalBtns.forEach((button) => {
   button.addEventListener('click', function () {
     const modalTarget = document.querySelector(this.dataset.modalTarget);

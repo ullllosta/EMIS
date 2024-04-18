@@ -58,7 +58,7 @@
 }
 
 a.email-link {
-  font-size: 16px;
+  font-size: 12px;
   font-family: 'Montserrat';
   position: relative;
   margin-left: auto;
@@ -69,7 +69,7 @@ a.email-link {
 
   &::after {
     content: '';
-    background-image: url(/images/icons/email-logo.svg);
+    background-image: url(../../images/icons/email-logo.svg);
     height: 22px;
     width: 28px;
   }
@@ -137,7 +137,7 @@ a.email-link {
     }
 
     .container {
-      padding-top: 20px;
+      padding-top: 30px;
     }
 
     .container,

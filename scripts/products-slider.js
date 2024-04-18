@@ -1,5 +1,5 @@
 const swiper = new Swiper('.swiper', {
-  slidesPerView: 5,
+  slidesPerView: 6,
   loop: true,
   grabCursor: true,
   loopAdditionalSlides: 4,
@@ -13,5 +13,10 @@ const swiper = new Swiper('.swiper', {
   navigation: {
     nextEl: '.navigation__next',
     prevEl: '.navigation__prev',
+  },
+  breakpoints: {
+    550: {
+      slidesPerView: 5,
+    },
   },
 });
