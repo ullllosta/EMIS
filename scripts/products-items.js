@@ -6,6 +6,10 @@ moreBtn.addEventListener('click', () => {
   moreBtn.style.transform = 'scale(0)';
 });
 
+window.addEventListener('resize', () => {
+  productsList.style.maxHeight = `${productsList.scrollHeight}px`;
+});
+
 // Массив карточек продукции
 const productsData = [
   {
@@ -105,16 +109,6 @@ const productsData = [
   {
     image: 'images/buns-coffe-list/gogal.jpg',
     name: 'Гогал с сыром',
-    description:
-      'тонкое тесто, смазаное сливочным маслом с большим количеством сыра внутри',
-    characteristics: {
-      weight: '120g',
-      price: '50 руб',
-    },
-  },
-  {
-    image: 'images/buns-coffe-list/liver-pie.jpg',
-    name: 'Гогал со специями',
     description:
       'тонкое тесто, смазаное сливочным маслом с большим количеством сыра внутри',
     characteristics: {

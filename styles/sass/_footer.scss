@@ -2,7 +2,10 @@
 
 .footer {
   background: linear-gradient(94deg, #051716 0%, #072826 36%, black 100%);
-  padding: 20px 0;
+
+  * {
+    font-size: 15px;
+  }
 
   ol {
     list-style: none;
@@ -12,7 +15,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    min-height: 132px;
+    min-height: 115px;
     flex-wrap: wrap;
     gap: 30px;
   }
@@ -63,9 +66,10 @@
     p,
     span {
       color: $white;
-      font-size: 20px;
       font-weight: 600;
-      line-height: 33px;
+      line-height: 23px;
+      display: flex;
+      flex-direction: column;
     }
 
     .footer__contact-numbers__time {
@@ -81,11 +85,12 @@
     padding-bottom: 18px;
   }
 
-  @media (max-width: 1230px) {
+  @media (max-width: 1030px) {
     &__list {
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      padding-top: 20px;
     }
 
     &__phones {
@@ -108,7 +113,7 @@
     }
   }
 
-  @media (max-width: 475px) {
+  @media (max-width: 415px) {
     &__contact-numbers {
       p {
         display: flex;

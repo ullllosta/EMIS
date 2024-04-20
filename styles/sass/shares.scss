@@ -4,9 +4,9 @@
 @import './footer';
 
 .shares {
-  background: url('../../images/backgrounds/backg-shares.png') no-repeat center -50px;
+  background: url(../../images/backgrounds/backg-shares.jpg) no-repeat center -50px;
   background-size: cover;
-  padding: 200px 0 60px;
+  padding: 160px 0 60px;
 
   .container {
     padding-top: 55px;
@@ -76,7 +76,7 @@
     margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
-    gap: 45px;
+    gap: 95px;
   }
 
   &__card {
@@ -179,7 +179,7 @@
     }
   }
 
-  @media (max-width: 1212px) {
+  @media (max-width: 1310px) {
     .container {
       padding-right: 0;
     }
@@ -195,9 +195,6 @@
 
   @media (max-width: 1000px) {
     padding-top: 140px;
-  }
-
-  @media (max-width: 760px) {
     .container {
       padding: 0;
     }

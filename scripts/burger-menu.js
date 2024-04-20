@@ -7,13 +7,10 @@ burgerMenu.addEventListener('click', () => {
 });
 
 document.addEventListener('click', (e) => {
-  if (
-    !e.target.closest('.header__mobile_open, .burger_menu_button') &&
-    header.classList.contains('header__mobile_open')
+  if (!e.target.closest('.header')
   ) {
     header.classList.remove('header__mobile_open');
-    burgerMenu.classList.remove('burger_menu_button_close');
-    burgerMenu.classList.toggle('burger_menu_button_close');
+    burgerMenu.classList.add('burger_menu_button_close');
   }
 });
 

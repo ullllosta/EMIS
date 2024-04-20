@@ -11,7 +11,7 @@
     background: url(../../images/backgrounds/dark-filter.png),
       url(../../images/backgrounds/backg-aboutPage.jpg);
     background-attachment: fixed;
-    padding: 250px 0 400px;
+    padding: 240px 0 400px;
     background-size: cover;
     overflow-x: clip;
 
@@ -75,11 +75,12 @@
     }
   }
 
+
   &-title {
     color: $white;
-    font-size: 47px;
+    font-size: 40px;
     font-weight: 800;
-    max-width: 700px;
+    max-width: 600px;
     width: 100%;
 
     @media (max-width: 1220px) {
@@ -93,10 +94,10 @@
 
   &-subtitle {
     color: $white;
-    font-size: 29px;
+    font-size: 20px;
     font-weight: 300;
-    padding: 22px 0 40px;
-    max-width: 700px;
+    padding: 10px 0 80px;
+    max-width: 550px;
 
     @media (max-width: 1220px) {
       font-size: 23px;
@@ -107,6 +108,7 @@
     }
   }
 }
+
 
 // MIDDLE-SECTION
 
@@ -153,7 +155,7 @@
 
     @media (max-width: 580px) {
       background: url(../../images/decor/flax-seeds.png) no-repeat left 400px
-          bottom 270px,
+          bottom 300px,
         url(../../images/decor/sesame.png) no-repeat left 200px bottom -450px;
     }
   }
@@ -255,7 +257,10 @@
           margin-top: 30px;
         }
       }
-
+      text-align: right;
+      @media (max-width: 1150px) {
+        text-align: left;
+      }
       padding-top: 40px;
     }
   }
@@ -296,7 +301,7 @@
     }
   }
 
-  &__column {
+  &__item {
     position: relative;
 
     img {
@@ -458,13 +463,13 @@
     overflow: auto;
     overflow-x: hidden;
     list-style: none;
-    padding-right: 40px;
+    padding-right: 10px;
     position: relative;
-    left: 27px;
+    left: 9px;
     height: inherit;
 
     &::-webkit-scrollbar {
-      width: 11px;
+      width: 6px;
 
       &-thumb {
         border-radius: 10px;

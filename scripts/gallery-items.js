@@ -1,4 +1,4 @@
-const galleryColumns = [
+const galleryItems = [
   {
     images: ['images/gallery/pahlava.png', 'images/gallery/pahlava2.png'],
     title: 'гогал c сыром',
@@ -61,14 +61,14 @@ const galleryColumns = [
 
 const gallery = document.querySelector('.gallery');
 
-galleryColumns.forEach((column) => {
-  const galleryColumn = document.createElement('div');
-  galleryColumn.classList.add('gallery__column');
+galleryItems.forEach((item) => {
+  const galleryItem = document.createElement('div');
+  galleryItem.classList.add('gallery__item');
 
-  column.images.forEach((image) => {
+  item.images.forEach((image) => {
     const img = document.createElement('img');
     img.src = image;
-    galleryColumn.appendChild(img);
+    galleryItem.appendChild(img);
   });
 
   const galleryDescription = document.createElement('div');
@@ -76,14 +76,14 @@ galleryColumns.forEach((column) => {
 
   const descriptionDiv = document.createElement('div');
   const title = document.createElement('h6');
-  title.textContent = column.title;
+  title.textContent = item.title;
   const description = document.createElement('p');
-  description.textContent = column.description;
+  description.textContent = item.description;
 
   descriptionDiv.appendChild(title);
   descriptionDiv.appendChild(description);
   galleryDescription.appendChild(descriptionDiv);
-  galleryColumn.appendChild(galleryDescription);
+  galleryItem.appendChild(galleryDescription);
 
-  gallery.appendChild(galleryColumn);
+  gallery.appendChild(galleryItem);
 });
