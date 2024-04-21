@@ -15,6 +15,10 @@
   justify-content: center;
   overflow: hidden;
 
+  @media (max-width: 768px) {
+    background-attachment: scroll;
+  }
+
   @media (max-width: 550px) {
     height: 730px;
   }
@@ -297,6 +301,10 @@
 .products-box {
   background: url(../../images/backgrounds/carpet-v2.jpg) no-repeat center fixed;
   background-size: cover;
+
+  @media (max-width: 768px) {
+    background-attachment: scroll;
+  }
 
   .container {
     height: 100%;
