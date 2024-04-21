@@ -118,6 +118,9 @@
   margin-bottom: 150px;
   position: relative;
   overflow-x: clip;
+  p{
+    color: #000;
+  }
 
   &::before {
     content: '';
@@ -294,6 +297,7 @@
     span {
       font-size: 21px;
       font-weight: 300;
+      color: #000;
     }
 
     h3 {
@@ -624,6 +628,7 @@
   &__text {
     font-weight: 500;
     font-size: 11px;
+    color:#000;
 
     @media (max-width: 550px) {
       font-size: 9px;
