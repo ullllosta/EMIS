@@ -87,11 +87,11 @@ sharesCards.forEach((card) => {
 // Создаем разметку для shares__modal
 sharesModals.forEach((modal) => {
   const article = document.createElement('article');
-  article.classList.add('shares__modal');
+  article.classList.add('shares__modal', 'shares__modal--hidden');
   article.setAttribute('id', modal.id);
   article.innerHTML = `
       <div class="shares__modal__container">
-        <button class="shares__modal__close">
+        <button class="shares__modal__close_btn">
           <img src="images/icons/cross-icon.svg" alt="Закрыть" />
         </button>
         <h1 class="shares__modal__title">${modal.title}</h1>
@@ -111,21 +111,21 @@ const modalBtns = document.querySelectorAll('.shares__button');
 modalBtns.forEach((button) => {
   button.addEventListener('click', function () {
     const modalTarget = document.querySelector(this.dataset.modalTarget);
-    modalTarget.style.display = 'flex';
+    modalTarget.classList.remove('shares__modal--hidden');
   });
 });
 
-const closeBtns = document.querySelectorAll('.shares__modal__close');
+const closeBtns = document.querySelectorAll('.shares__modal__close_btn');
 
 closeBtns.forEach((button) => {
   button.addEventListener('click', function () {
     const modal = this.closest('.shares__modal');
-    modal.style.display = 'none';
+    modal.classList.add('shares__modal--hidden');
   });
 });
 
 window.addEventListener('click', function (event) {
   if (event.target.classList.contains('shares__modal')) {
-    event.target.style.display = 'none';
+    event.target.classList.add('shares__modal--hidden');
   }
 });
