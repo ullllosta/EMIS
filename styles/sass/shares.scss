@@ -17,6 +17,9 @@
     font-size: 40px;
     color: #fff;
     font-family: 'Montserrat';
+    @media (max-width: 440px) {
+      font-size: 30px;   
+    }
   }
 
   &__text {
@@ -29,6 +32,9 @@
     color: #fff;
     margin-top: 10px;
     max-width: 420px;
+    @media (max-width: 440px) {
+      font-size: 16px;   
+    }
   }
 
   &__name {
@@ -77,6 +83,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: 95px;
+
+    @media(max-width: 1310px) {
+      gap:65px;
+      
+    }
   }
 
   &__card {
@@ -135,6 +146,7 @@
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(0.5px);
+    
 
     &__close {
       background: transparent;
@@ -144,6 +156,9 @@
       top: 15px;
       cursor: pointer;
       padding: 10px;
+      @media (max-width: 550px) {
+        padding: 0px;
+      }
     }
 
     &__container {
@@ -152,6 +167,18 @@
       border-radius: 10px;
       backdrop-filter: blur(10px);
       background: rgba(255, 255, 255, 0.86);
+      @media(max-width: 1310px){
+        max-width: 800px;
+        margin: 0 60px;
+      }
+      @media(max-width: 700px){
+        max-width: 800px;
+        margin: 0 40px;
+      }
+      @media(max-width: 510px){
+        padding: 25px;
+      }
+
     }
 
     &__title {
@@ -159,6 +186,19 @@
       font-size: 30px;
       color: #097e77;
       margin-bottom: 30px;
+
+      @media(max-width: 1310px){
+        font-size: 28px;
+      }
+      @media(max-width: 700px){
+        font-size: 26px;
+      }
+      @media(max-width: 510px){
+        font-size: 24px;
+      }
+      @media(max-width: 450px){
+        font-size: 20px;
+      }
     }
 
     &__description {
@@ -175,6 +215,15 @@
         font-weight: 600;
         font-size: 20px;
         color: #097e77;
+      }
+      @media(max-width: 1310px){
+        font-size: 18px;
+      }
+      @media(max-width: 700px){
+        font-size: 16px;
+      }
+      @media(max-width: 510px){
+        font-size: 14px;
       }
     }
   }

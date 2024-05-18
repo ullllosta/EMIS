@@ -19,7 +19,7 @@ const productsData = [
       'булочка на натуральном сливочном масле с большим добавлением корицы',
     characteristics: {
       weight: '120g',
-      price: '50 руб',
+      price: '55 руб',
     },
   },
   {
@@ -28,7 +28,7 @@ const productsData = [
     description: 'тесто на натуральном сливочном масле с ягодами вишни внутри',
     characteristics: {
       weight: '120g',
-      price: '50 руб',
+      price: '60 руб',
     },
   },
   {
@@ -38,7 +38,7 @@ const productsData = [
       'булочка на натуральном сливочном масле с большим добавлением корицы',
     characteristics: {
       weight: '120g',
-      price: '50 руб',
+      price: '55 руб',
     },
   },
   {
@@ -48,7 +48,7 @@ const productsData = [
       'булочка на натуральном сливочном масле с большим добавлением корицы',
     characteristics: {
       weight: '120g',
-      price: '50 руб',
+      price: '55 руб',
     },
   },
   {
@@ -103,7 +103,7 @@ const productsData = [
     description: 'тесто на натуральном сливочном масле с ягодами вишни внутри',
     characteristics: {
       weight: '120g',
-      price: '50 руб',
+      price: '55 руб',
     },
   },
   {
@@ -113,7 +113,7 @@ const productsData = [
       'тонкое тесто, смазаное сливочным маслом с большим количеством сыра внутри',
     characteristics: {
       weight: '120g',
-      price: '50 руб',
+      price: '130 руб',
     },
   },
   {
@@ -123,7 +123,7 @@ const productsData = [
       'тонкое тесто, смазаное сливочным маслом с большим количеством сыра внутри',
     characteristics: {
       weight: '120g',
-      price: '50 руб',
+      price: '110 руб',
     },
   },
   {
@@ -209,100 +209,100 @@ productsData.forEach((item) => {
 // Массив с данными слайдов
 const slides = [
   {
+    img: 'images/cookie-slider/pahlava.jpg',
+    title: 'Пахлава Бакинская',
+    description:
+      'десять слоев нежнейшего теста, пропитанного топленым маслом, начинка - грецкий орех и пряности',
+    price: '1.400р / кг',
+  },
+  {
     img: 'images/cookie-slider/badambura.jpg',
     title: 'Бадамбура миндаль',
     description:
       'каждый слой промазан топленым сливочным маслом, начинка - дробленный обжаренный миндаль с сахаром и мускатным орехом',
-    price: '40р / шт',
+    price: '100р / шт',
   },
   {
     img: 'images/cookie-slider/chocolate-ball.jpg',
     title: 'Курабье мегашоколад',
     description: 'какао, отборный шоколад, натуральное сливочное масло',
-    price: '40р / шт',
+    price: '45р / шт',
   },
   {
     img: 'images/cookie-slider/nuts-cookie.jpg',
     title: 'Курабье с грецким орехом',
     description:
       'нежнейшее песочное печенье с дробленным грецким орехом в тесте, хорошо пропитанное сахарным сиропом',
-    price: '40р / шт',
-  },
-  {
-    img: 'images/cookie-slider/pahlava.jpg',
-    title: 'Пахлава Бакинская',
-    description:
-      'десять слоев нежнейшего теста, пропитанного топленым маслом, начинка - грецкий орех и пряности',
-    price: '1.200р / кг',
+    price: '45р / шт',
   },
   {
     img: 'images/cookie-slider/pistachio.jpg',
     title: 'Аджибадам миндаль',
     description:
       'белковое тесто без добавления муки, с добавлением молотого миндаля и фундука',
-    price: '40р / шт',
+    price: '45р / шт',
   },
   {
     img: 'images/cookie-slider/banana-cookie.jpg',
-    title: 'Пахлава Бакинская',
-    description:
-      'десять слоев нежнейшего теста, пропитанного топленым маслом, начинка - грецкий орех и пряности',
-    price: '40р / шт',
-  },
-  {
-    img: 'images/cookie-slider/cocunt-cookie.jpg',
     title: 'Банан с грецким орехом',
     description:
       'нежное, мягкое песочное печенье с добавлением крупной кокосовой стружки, пропитанное сахарным сиропом',
-    price: '40р / шт',
+    price: '45р / шт',
   },
   {
     img: 'images/cookie-slider/hazelnut-cookie.jpg',
     title: 'Шекербура фундук',
     description:
       'Нежное песочное тесто, которое обволакивает дробленый обжаренный фундук, смешанный с ароматным сахаром и нотками кардамона',
-    price: '40р / шт',
+    price: '90р / шт',
   },
   {
     img: 'images/cookie-slider/kyata.jpg',
     title: 'Кята умач',
     description:
       'песочное печенье, прослойка - сливочное масло, обжаренное в муке и сахаре',
-    price: '40р / шт',
+    price: '45р / шт',
   },
   {
     img: 'images/cookie-slider/kyata-nuts.jpg',
     title: 'Кята грецкий орех',
     description:
       'нежное песочное печенье с прослойкой из сливочного масла, обжаренного с мукой, сахаром и ароматным грецким орехом',
-    price: '40р / шт',
+    price: '45р / шт',
   },
   {
     img: 'images/cookie-slider/milk-cookie.jpg',
     title: 'Рулет сгущенка и орех',
     description:
       'слоеное тесто, смазанное топленым маслом, начинка - варёная сгущенка , грецкий орех',
-    price: '40р / шт',
+    price: '45р / шт',
   },
   {
     img: 'images/cookie-slider/sesame-cookie.jpg',
     title: 'Кунжутное',
     description:
       'песочное тесто с нежнейшим сливочным послевкусием, обвалено и выпечено в кунжуте',
-    price: '40р / шт',
+    price: '45р / шт',
   },
   {
     img: 'images/cookie-slider/sandy-cookie.jpg',
     title: 'Шекер черек',
     description: 'нежное песочное печенье на сливочном масле',
-    price: '40р / шт',
+    price: '45р / шт',
+  },
+  {
+    img: 'images/cookie-slider/cocunt-cookie.jpg',
+    title: 'Шекерпаре с кокосом',
+    description:
+      'нежное, мягкое песочное печенье с добавлением крупной кокосовой стружки, пропитанное сахарным сиропом',
+    price: '45р / шт',
   },
   {
     img: 'images/cookie-slider/mutaki.jpg',
-    title: 'Пахлава Бакинская',
+    title: 'Мутаки с грецким орехом',
     description:
-      'десять слоев нежнейшего теста, пропитанного топленым маслом, начинка - грецкий орех и пряности',
-    price: '40р / шт',
+      'тонкое песочное тесто, начинка - грецкий орех и прянности, нежное сливочное послевкусие',
+    price: '45р / шт',
   },
 ];
 

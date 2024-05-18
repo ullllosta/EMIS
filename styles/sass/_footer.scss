@@ -5,6 +5,9 @@
 
   * {
     font-size: 15px;
+    @media(max-width:1050px){
+      font-size: 13px;
+    }
   }
 
   ol {
@@ -31,6 +34,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
+    
 
     p {
       color: $white;
@@ -55,12 +59,13 @@
   &__contact-numbers {
     display: flex;
     max-width: 554px;
-    gap: 50px;
+    gap: 40px;
 
     div {
       display: flex;
       max-width: 570px;
       align-items: center;
+      justify-content: center;
     }
 
     p,
@@ -70,6 +75,9 @@
       line-height: 23px;
       display: flex;
       flex-direction: column;
+      @media(max-width:1050px){
+
+      }
     }
 
     .footer__contact-numbers__time {
@@ -85,7 +93,7 @@
     padding-bottom: 18px;
   }
 
-  @media (max-width: 1030px) {
+  @media (max-width: 1050px) {
     &__list {
       justify-content: center;
       align-items: center;
@@ -113,11 +121,12 @@
     }
   }
 
-  @media (max-width: 415px) {
+  @media (max-width: 418px) {
     &__contact-numbers {
       p {
         display: flex;
         flex-direction: column;
+        gap:0px;
       }
     }
     &__navigation__item {
