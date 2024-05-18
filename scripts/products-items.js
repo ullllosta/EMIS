@@ -4,6 +4,7 @@ const productsList = document.querySelector('.products__list');
 moreBtn.addEventListener('click', () => {
   productsList.style.maxHeight = `${productsList.scrollHeight}px`;
   moreBtn.style.transform = 'scale(0)';
+  moreBtn.style.margin = 0;
 
   window.addEventListener('resize', () => {
     productsList.style.maxHeight = `${productsList.scrollHeight}px`;

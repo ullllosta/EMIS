@@ -139,7 +139,7 @@
   margin-bottom: 150px;
   position: relative;
   overflow-x: clip;
-  p{
+  p {
     color: #000;
   }
 
@@ -415,6 +415,7 @@
         font-weight: 500;
         padding: 8px 10px 0;
         max-width: 240px;
+        color: #072826;
       }
 
       p {
@@ -422,6 +423,7 @@
         font-weight: 400;
         padding: 0 10px 10px;
         max-width: 240px;
+        color: #072826;
       }
 
       @media (max-width: 490px) {
@@ -700,7 +702,7 @@
   &__text {
     font-weight: 500;
     font-size: 11px;
-    color:#000;
+    color: #000;
 
     @media (max-width: 550px) {
       font-size: 9px;
