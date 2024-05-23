@@ -3,6 +3,18 @@
 @import './header';
 @import './footer';
 
+.maps_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  button.map_button--active {
+    border: 3px solid $brand-color;
+  }
+}
+
 .contacts {
   display: flex;
   background: url(../../images/backgrounds/backg-contacts.png) no-repeat;
