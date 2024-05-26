@@ -5,13 +5,34 @@
 
 .maps_buttons {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
 
+
+  button {
+    background-color: $brendColor;
+    padding: 8px 15px;
+    font-size: 17px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all .3s ease;
+    
+
+    &:hover {
+      transform: scale(1.03);
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    &:active {
+      transform: scale(1);
+    }
+  }
+
   button.map_button--active {
-    border: 3px solid $brendColor;
+    background-color: #fff;
+    color: $brendColor;
   }
 }
 
@@ -19,6 +40,14 @@
   display: flex;
   background: url(../../images/backgrounds/backg-contacts.png) no-repeat;
   background-size: cover;
+
+  img {
+    transition: all .3s ease;
+  }
+  img:hover {
+    -webkit-filter: drop-shadow(0px 0px 12px #10eedfd8);
+    filter: drop-shadow(0px 0px 12px #10eedfb8); 
+  }
 
   &_logo {
     padding-top: 27px;

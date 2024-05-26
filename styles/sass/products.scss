@@ -3,6 +3,10 @@
 @import './header';
 @import './footer';
 
+main {
+  background-color: #fff;
+}
+
 // SLIDER
 
 .products-slider {
@@ -247,6 +251,13 @@
     background-color: #fff;
     padding: 15px 9px;
 
+    img {
+      transition: all .1s ease;
+    }
+    img:hover {
+      transform: scale(1.1);
+    }
+
     h3 {
       font-weight: 600;
       font-size: 21px;
@@ -443,4 +454,11 @@
   margin: 46px auto;
   transition: margin 0.5s;
   cursor: pointer;
+  transition: all .3s ease;
+  &:hover {
+    transform: scale(1.1);
+  }
+  &:active {
+    transform: scale(.9);
+  }
 }

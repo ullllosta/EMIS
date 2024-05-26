@@ -58,6 +58,10 @@
   &__item {
     padding-left: 20px;
     white-space: nowrap;
+
+    a:hover {
+      text-shadow: 0 0 8px #10eee1;
+    }
   }
 }
 
@@ -70,6 +74,10 @@ a.email-link {
   align-items: flex-end;
   padding-bottom: 17px;
   gap: 10px;
+
+  &:hover {
+    text-shadow: 0 0 8px #10eee1;
+  }
 
   &::after {
     content: '';
