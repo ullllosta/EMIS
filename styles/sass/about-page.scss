@@ -168,8 +168,8 @@ main {
     @media (max-width: 1050px) {
       height: 1200px;
       background: url(../../images/decor/flax-seeds.png) no-repeat right 0px
-          bottom 230px,
-        url(../../images/decor/sesame.png) no-repeat left -140px bottom -100px;
+          bottom 205px,
+        url(../../images/decor/sesame.png) no-repeat left -140px bottom -110px;
     }
 
     @media (max-width: 780px) {
@@ -178,20 +178,20 @@ main {
       -moz-transform: scale(0.8) translate(-65%);
       -ms-transform: scale(0.8) translate(-65%);
       -o-transform: scale(0.8) translate(-65%);
-      background: url(../../images/decor/flax-seeds.png) no-repeat left 400px
-          bottom 320px,
-        url(../../images/decor/sesame.png) no-repeat left 250px bottom -325px;
+      background: url(../../images/decor/flax-seeds.png) no-repeat left 435px
+          bottom 280px,
+        url(../../images/decor/sesame.png) no-repeat left 250px bottom -345px;
     }
 
     @media (max-width: 580px) {
       background: url(../../images/decor/flax-seeds.png) no-repeat left 400px
-          bottom 385px,
+          bottom 345px,
         url(../../images/decor/sesame.png) no-repeat left 200px bottom -215px;
     }
-    @media (max-width: 440px) {
+    @media (max-width: 362px) {
       background: url(../../images/decor/flax-seeds.png) no-repeat left 400px
-          bottom 340px,
-        url(../../images/decor/sesame.png) no-repeat left 200px bottom -245px;
+          bottom 320px,
+        url(../../images/decor/sesame.png) no-repeat left 200px bottom -275px;
     }
 
    
@@ -209,14 +209,14 @@ main {
     @media (max-width: 1050px) {
       flex-direction: column;
     }
-
-    @media (max-width: 400px) {
-      padding: 130px 10px 0;
-    }
-
     @media (max-width: 580px) {
-      padding-top: 70px;
+      padding-top: 80px;
     }
+    @media (max-width: 400px) {
+      padding: 80px 20px 0;
+    }
+
+    
   }
 
   &__article {
@@ -226,7 +226,7 @@ main {
     display: flex;
     flex-direction: column;
     max-width: 472px;
-    gap:20px;
+    gap:50px;
 
     @media (max-width: 1050px) {
       max-width: 100%;
@@ -246,7 +246,7 @@ main {
       h2 {
         @media (max-width: 580px) {
           max-width: 400px;
-          font-size: 23px;
+          font-size: 20px;
         }
       }
 
@@ -258,7 +258,7 @@ main {
 
         @media (max-width: 1220px) {
           font-size: 20px;
-          max-width: 480px;
+          max-width: 450px;
         }
 
         @media (max-width: 580px) {
@@ -281,14 +281,14 @@ main {
           margin-top: 5px;
         }
 
-        h2 {
-          max-width: 400px;
-        }
+        // h2 {
+        //   max-width: 400px;
+        // }
         
         @media (max-width: 580px){
           h2 {
             max-width: 350px;
-            font-size: 23px;
+            font-size: 20px;
           }
         }
       }
@@ -371,7 +371,7 @@ main {
         font-size: 28px;
       }
       @media (max-width: 580px) {
-        font-size: 23px;
+        font-size: 20px;
       }
     }
   }
@@ -381,6 +381,7 @@ main {
     cursor: default;
 
     img {
+      object-fit: cover;
       width: 230px;
       height: 230px;
 
@@ -416,7 +417,7 @@ main {
       }
 
       h6 {
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 500;
         padding: 8px 10px 0;
         max-width: 240px;
@@ -424,19 +425,27 @@ main {
       }
 
       p {
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 400;
         padding: 0 10px 10px;
         max-width: 240px;
         color: #072826;
       }
-
-      @media (max-width: 490px) {
+      @media (max-width: 550px) {
         p {
-          font-size: 9px;
+          font-size: 10px;
         }
         h6 {
+          font-size: 11px;
+        }
+      }
+
+      @media (max-width: 550px) {
+        p {
           font-size: 10px;
+        }
+        h6 {
+          font-size: 11px;
         }
       }
 
@@ -528,8 +537,8 @@ main {
         font-size: 21px;
       }
       @media (max-width: 580px) {
-        font-size: 23px;
-        max-width: 450px;
+        font-size: 18px;
+        max-width: 400px;
       }
       @media (max-width: 400px) {
         font-size: 16px;

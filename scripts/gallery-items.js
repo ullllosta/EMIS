@@ -1,15 +1,15 @@
 const galleryItems = [
   {
-    images: ['images/gallery/pahlava.png', 'images/gallery/pahlava2.png'],
+    images: ['images/gallery/gogal.png', 'images/gallery/gogal2.png'],
     title: 'гогал c сыром',
     description:
-      'тонкое слоеное тесто, смазаное сливочным маслом, и большое количество нежнейшего сыра внутри сиропом',
+      'традиционное блюдо азербайджанской кухни',
   },
   {
-    images: ['images/gallery/adjibadam.png', 'images/gallery/pahlava.png'],
-    title: 'курабье с грецким орехом',
+    images: ['images/gallery/tasting.png', 'images/gallery/tasting2.png'],
+    title: 'бесплатная дегустация',
     description:
-      'нежнейшее песочное печенье с дробленным грецким орехом в тесте, хорошо пропитанное сахарным сиропом',
+      'попробуйте бесплатно любое печенье перед покупкой!',
   },
   {
     images: [
@@ -18,44 +18,44 @@ const galleryItems = [
     ],
     title: 'курабье с грецким орехом',
     description:
-      'нежнейшее песочное печенье с дробленным грецким орехом в тесте, хорошо пропитанное сахарным сиропом',
+      'нежнейшее песочное печенье с дробленным грецким орехом',
   },
   {
-    images: ['images/gallery/buns.png', 'images/gallery/nuts-cookie2.png'],
-    title: 'курабье с грецким орехом',
+    images: ['images/gallery/buns.png', 'images/gallery/buns2.png'],
+    title: 'вкуснейшая выпечка',
     description:
-      'нежнейшее песочное печенье с дробленным грецким орехом в тесте, хорошо пропитанное сахарным сиропом',
+      'попробуйте булочки с разными вкусами',
     wide: true,
   },
   {
     images: [
       'images/gallery/chocolate-ball.png',
-      'images/gallery/nuts-cookie2.png',
+      'images/gallery/chocolate-ball2.png',
     ],
-    title: 'курабье с грецким орехом',
+    title: 'курабье мегашоколад',
     description:
-      'нежнейшее песочное печенье с дробленным грецким орехом в тесте, хорошо пропитанное сахарным сиропом',
+      'какао, отборный шоколад, натуральное сливочное масло',
   },
   {
     images: [
-      'images/gallery/milk-cookie.png',
-      'images/gallery/nuts-cookie2.png',
+      'images/gallery/julienne.png',
+      'images/gallery/julienne2.png',
     ],
-    title: 'курабье с грецким орехом',
+    title: 'жюльен',
     description:
-      'нежнейшее песочное печенье с дробленным грецким орехом в тесте, хорошо пропитанное сахарным сиропом',
+      'нежное тесто с начинкой из курицы и грибов',
   },
   {
-    images: ['images/gallery/gogal.png', 'images/gallery/gogal2.png'],
-    title: 'гогал c сыром',
+    images: ['images/gallery/tea.png', 'images/gallery/tea2.png'],
+    title: 'листовой чай',
     description:
-      'тонкое слоеное тесто, смазаное сливочным маслом, и большое количество нежнейшего сыра внутри сиропом',
+      'большой выбор листового чая на выбор',
   },
   {
-    images: ['images/gallery/gogal.png', 'images/gallery/gogal2.png'],
-    title: 'гогал c сыром',
+    images: ['images/gallery/pahlava.png', 'images/gallery/pahlava2.png'],
+    title: 'пахлава',
     description:
-      'тонкое слоеное тесто, смазаное сливочным маслом, и большое количество нежнейшего сыра внутри сиропом',
+      'самая вкусная пахлава Ростова',
   },
 ];
 

@@ -14,41 +14,82 @@ moreBtn.addEventListener('click', () => {
 // Массив карточек продукции
 const productsData = [
   {
+    image: 'images/buns-coffe-list/barberry-veal.jpg',
+    name: 'Пирог с телятиной',
+    description:
+      'свежая телятина в сочетании с ягодами барбарисаㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ',
+    characteristics: {
+      weight: '135g',
+      price: '140 руб',
+    },
+  },
+  {
+    image: 'images/buns-coffe-list/chicken-spinach.jpg',
+    name: 'Курица со шпинатом',
+    description:
+      'треугольники с обжаренным куриным филе и листьями шпинатаㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ',
+    characteristics: {
+      weight: '130g',
+      price: '110 руб',
+    },
+  },
+  {
+    image: 'images/buns-coffe-list/miringue-roll.jpg',
+    name: 'Миренговый рулет',
+    description:
+      'пирожное из запечённых взбитых яичных белков и сахара, со свежими ягодами клубники',
+    characteristics: {
+      weight: '1000g',
+      price: '1500 руб',
+    },
+  },
+  {
+    image: 'images/buns-coffe-list/lemon-cake.jpg',
+    name: 'Лимонный кекс',
+    description:
+      'сдобное тесто с цедрой и кусочками лимона, сливочная глазурь сверхуㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ',
+    characteristics: {
+      weight: '1000g',
+      price: '1200 руб',
+    },
+  },
+  
+  {
     image: 'images/buns-coffe-list/cinnamon.jpg',
     name: 'Булка с корицей',
     description:
       'булочка на натуральном сливочном масле с большим добавлением корицы',
     characteristics: {
-      weight: '120g',
+      weight: '90g',
       price: '55 руб',
     },
   },
   {
     image: 'images/buns-coffe-list/cherry-pie.jpg',
     name: 'Пирог с вишней',
-    description: 'тесто на натуральном сливочном масле с ягодами вишни внутри',
+    description: 'тесто на натуральном сливочном масле с ягодами вишни внутриㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ ',
     characteristics: {
       weight: '120g',
       price: '60 руб',
     },
   },
   {
-    image: 'images/buns-coffe-list/cinnamon.jpg',
-    name: 'Булка с маком',
+    image: 'images/buns-coffe-list/meringue.jpg',
+    name: 'Миренга',
     description:
-      'булочка на натуральном сливочном масле с большим добавлением корицы',
+      'нежный и воздушный десерт, приготовленный из взбитых белков с сахаром и корицей',
     characteristics: {
-      weight: '120g',
-      price: '55 руб',
+      weight: '70g',
+      price: '100 руб',
     },
   },
   {
     image: 'images/buns-coffe-list/creamy-bun.jpg',
     name: 'Булка сливочная',
     description:
-      'булочка на натуральном сливочном масле с большим добавлением корицы',
+      'булочка с натуральным сливочным маслом и сахаром в слояхㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ',
     characteristics: {
-      weight: '120g',
+      weight: '100g',
       price: '55 руб',
     },
   },
@@ -56,75 +97,75 @@ const productsData = [
     image: 'images/buns-coffe-list/currant-pie.jpeg',
     name: 'Пирог со смородиной',
     description:
-      'булочка на натуральном сливочном масле с большим добавлением корицы',
+      'булочка на натуральном сливочном масле с джемом из смородиныㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ',
     characteristics: {
       weight: '120g',
-      price: '50 руб',
+      price: '60 руб',
     },
   },
   {
     image: 'images/buns-coffe-list/strawberry-pie.jpg',
     name: 'Пирог с клубникой',
-    description: 'тесто на натуральном сливочном масле с ягодами вишни внутри',
+    description: 'нежное тесто с клубничным джемом в начинкеㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ',
     characteristics: {
-      weight: '120g',
-      price: '50 руб',
+      weight: '110g',
+      price: '60 руб',
     },
   },
   {
     image: 'images/buns-coffe-list/egg-pie.jpg',
     name: 'Пирог с яйцом и луком',
-    description: 'тесто на натуральном сливочном масле с ягодами вишни внутри',
+    description: 'нежное тесто и ароматная начинка из яиц и лукаㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ',
     characteristics: {
       weight: '120g',
-      price: '50 руб',
+      price: '60 руб',
     },
   },
   {
     image: 'images/buns-coffe-list/liver-pie.jpg',
     name: 'Пирог с печенью',
-    description: 'тесто на натуральном сливочном масле с ягодами вишни внутри',
+    description: 'вкусная булочка с начинкой из печени и картофеляㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ',
     characteristics: {
       weight: '120g',
-      price: '50 руб',
+      price: '60 руб',
     },
   },
   {
     image: 'images/buns-coffe-list/julienne.jpg',
     name: 'Жюльен с курицей',
-    description: 'тесто на натуральном сливочном масле с ягодами вишни внутри',
+    description: 'тонкое тесто с большим количеством куриного филе, грибов и сырной шапочкой сверхуㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ',
     characteristics: {
       weight: '120g',
-      price: '50 руб',
+      price: '85 руб',
     },
   },
   {
-    image: 'images/buns-coffe-list/cinnamon.jpg',
+    image: 'images/buns-coffe-list/cabbage.jpg',
     name: 'Пирог с капустой',
-    description: 'тесто на натуральном сливочном масле с ягодами вишни внутри',
+    description: 'тушеная капуста в нежном тестеㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ',
     characteristics: {
-      weight: '120g',
+      weight: '140g',
       price: '55 руб',
     },
   },
   {
-    image: 'images/buns-coffe-list/gogal.jpg',
+    image: 'images/buns-coffe-list/gogal-cheese.jpg',
     name: 'Гогал с сыром',
     description:
-      'тонкое тесто, смазаное сливочным маслом с большим количеством сыра внутри',
+      'тонкое тесто, смазаное сливочным маслом с большим количеством сыра внутриㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ',
     characteristics: {
-      weight: '120g',
+      weight: '140g',
       price: '130 руб',
     },
   },
   {
-    image: 'images/buns-coffe-list/liver-pie.jpg',
+    image: 'images/buns-coffe-list/gogal.jpg',
     name: 'Гогал со специями',
     description:
-      'тонкое тесто, смазаное сливочным маслом с большим количеством сыра внутри',
+      'тонкое тесто, смазаное сливочным маслом со специями внутриㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ',
     characteristics: {
       weight: '120g',
-      price: '110 руб',
+      price: '140 руб',
     },
   },
   {
@@ -254,7 +295,7 @@ const slides = [
     img: 'images/cookie-slider/hazelnut-cookie.jpg',
     title: 'Шекербура фундук',
     description:
-      'Нежное песочное тесто, которое обволакивает дробленый обжаренный фундук, смешанный с ароматным сахаром и нотками кардамона',
+      'нежное песочное тесто, которое обволакивает дробленый обжаренный фундук, смешанный с ароматным сахаром и нотками кардамона',
     price: '90р / шт',
   },
   {
