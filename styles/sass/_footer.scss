@@ -96,8 +96,8 @@
       transition: all .3s ease;
     }
     img:hover {
-      -webkit-filter: drop-shadow(0px 0px 12px #10eedfd8);
-      filter: drop-shadow(0px 0px 12px #10eedfd8);    }
+      -webkit-filter: drop-shadow(0px 0px 12px #84ebe4);
+      filter: drop-shadow(0px 0px 12px #84ebe4);    }
     }
 
   @media (max-width: 1050px) {
@@ -128,7 +128,7 @@
     }
   }
 
-  @media (max-width: 406px) {
+  @media (max-width: 409px) {
     &__contact-numbers {
       p {
         display: flex;

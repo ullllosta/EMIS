@@ -44,18 +44,19 @@
   display: flex;
   background: url(../../images/backgrounds/backg-contacts.png) no-repeat;
   background-size: cover;
+  
 
   img {
     transition: all .3s ease;
-
+    padding-right:5px;
     @media (max-width: 450px) {
       transform: scale(0.9);
     }
     
   }
   img:hover {
-    -webkit-filter: drop-shadow(0px 0px 12px #10eedfd8);
-    filter: drop-shadow(0px 0px 12px #10eedfb8); 
+    -webkit-filter: drop-shadow(0px 0px 12px #84ebe4);
+    filter: drop-shadow(0px 0px 12px #84ebe4); 
   }
 
   &_logo {
@@ -117,12 +118,13 @@
       font-size: 18px;
       color: #fff;
       font-family: 'Montserrat';
+      
 
       @media (max-width: 450px){
         font-size: 15px;
       }
-    }
-
+    } 
+ 
     .contacts__contact_us {
       color: #fff;
     }
