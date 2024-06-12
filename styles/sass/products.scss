@@ -53,16 +53,17 @@ main {
     z-index: 2;
     left: 50%;
     transform: translate(-50%);
-    height: 94%;
+    height: 100%;
     display: flex;
     align-items: center;
-    top: 0;
+    top: -35px;
 
     .navigation__prev,
     .navigation__next {
       cursor: pointer;
       position: absolute;
       transition: all ease 0.3s;
+      display: flex;
 
       &:hover {
         scale: 1.1;
