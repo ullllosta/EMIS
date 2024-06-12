@@ -223,7 +223,7 @@ main {
     display: flex;
     flex-direction: column;
     max-width: 485px;
-    gap:50px;
+    gap: 50px;
 
     @media (max-width: 1050px) {
       max-width: 100%;
@@ -343,6 +343,10 @@ main {
     position: relative;
     cursor: default;
     transition: scale ease-in-out 0.2s;
+    -webkit-transition: scale ease-in-out 0.2s;
+    -moz-transition: scale ease-in-out 0.2s;
+    -ms-transition: scale ease-in-out 0.2s;
+    -o-transition: scale ease-in-out 0.2s;
 
     img {
       max-width: 100%;
@@ -356,6 +360,10 @@ main {
       left: 0;
       opacity: 0;
       transition: all ease-in-out 0.2s;
+      -webkit-transition: all ease-in-out 0.2s;
+      -moz-transition: all ease-in-out 0.2s;
+      -ms-transition: all ease-in-out 0.2s;
+      -o-transition: all ease-in-out 0.2s;
     }
 
     .gallery__description {
@@ -372,6 +380,10 @@ main {
         background-color: rgba(255, 255, 255, 0.72);
         opacity: 0;
         transition: all ease-in-out 0.25s;
+        -webkit-transition: all ease-in-out 0.25s;
+        -moz-transition: all ease-in-out 0.25s;
+        -ms-transition: all ease-in-out 0.25s;
+        -o-transition: all ease-in-out 0.25s;
       }
 
       h6 {
@@ -406,6 +418,10 @@ main {
       img:last-of-type {
         transition: all ease-in-out 0.2s;
         opacity: 1;
+        -webkit-transition: all ease-in-out 0.2s;
+        -moz-transition: all ease-in-out 0.2s;
+        -ms-transition: all ease-in-out 0.2s;
+        -o-transition: all ease-in-out 0.2s;
       }
 
       .gallery__description {
