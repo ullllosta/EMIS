@@ -6,6 +6,12 @@ const swiper = new Swiper('.swiper', {
   centeredSlides: true,
   roundLengths: true,
   slideActiveClass: 'active',
+  keyboard: {
+    enabled: true,
+  },
+  mousewheel: {
+    enabled: true,
+  },
   pagination: {
     el: '.pagination',
     clickable: true,

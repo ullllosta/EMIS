@@ -53,10 +53,7 @@ main {
     z-index: 2;
     left: 50%;
     transform: translate(-50%);
-    height: 94%;
-    display: flex;
-    align-items: center;
-    top: 0;
+    top: 353px;
 
     .navigation__prev,
     .navigation__next {
@@ -79,6 +76,9 @@ main {
     }
     .navigation__next {
       right: 15px;
+    }
+    @media (max-width: 550px) {
+      top: 270px
     }
   }
 }
@@ -372,6 +372,9 @@ main {
       -moz-border-radius: 5px;
       -ms-border-radius: 5px;
       -o-border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     &__image {

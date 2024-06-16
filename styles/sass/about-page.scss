@@ -455,8 +455,6 @@ main {
     grid-template-columns: repeat(4, 1fr);
 
     &__article {
-      grid-column: span 2;
-
       .brand-title {
         font-size: clamp(20px, 3vw, 30px);
       }
@@ -480,7 +478,6 @@ main {
     grid-template-columns: repeat(2, 1fr);
 
     &__article {
-      grid-column: span 2;
       .brand-title {
         font-size: clamp(20px, 4vw, 30px);
       }

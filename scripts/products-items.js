@@ -17,7 +17,7 @@ const productsData = [
     image: 'images/buns-coffe-list/barberry-veal.jpg',
     name: 'Пирог с телятиной',
     description:
-      'свежая телятина в сочетании с ягодами барбарисаㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ',
+      'свежая телятина в сочетании с ягодами барбариса',
     characteristics: {
       weight: '135g',
       price: '140 руб',
@@ -27,7 +27,7 @@ const productsData = [
     image: 'images/buns-coffe-list/chicken-spinach.jpg',
     name: 'Курица со шпинатом',
     description:
-      'треугольники с обжаренным куриным филе и листьями шпинатаㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ',
+      'треугольники с обжаренным куриным филе и листьями шпината',
     characteristics: {
       weight: '130g',
       price: '110 руб',
@@ -47,7 +47,7 @@ const productsData = [
     image: 'images/buns-coffe-list/lemon-cake.jpg',
     name: 'Лимонный кекс',
     description:
-      'сдобное тесто с цедрой и кусочками лимона, сливочная глазурь сверхуㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ',
+      'сдобное тесто с цедрой и кусочками лимона, сливочная глазурь сверху',
     characteristics: {
       weight: '1000g',
       price: '1200 руб',
@@ -67,7 +67,7 @@ const productsData = [
   {
     image: 'images/buns-coffe-list/cherry-pie.jpg',
     name: 'Пирог с вишней',
-    description: 'тесто на натуральном сливочном масле с ягодами вишни внутриㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ ',
+    description: 'тесто на натуральном сливочном масле с ягодами вишни внутри',
     characteristics: {
       weight: '120g',
       price: '60 руб',
@@ -87,7 +87,7 @@ const productsData = [
     image: 'images/buns-coffe-list/creamy-bun.jpg',
     name: 'Булка сливочная',
     description:
-      'булочка с натуральным сливочным маслом и сахаром в слояхㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ',
+      'булочка с натуральным сливочным маслом и сахаром в слоях',
     characteristics: {
       weight: '100g',
       price: '55 руб',
@@ -97,7 +97,7 @@ const productsData = [
     image: 'images/buns-coffe-list/currant-pie.jpeg',
     name: 'Пирог со смородиной',
     description:
-      'булочка на натуральном сливочном масле с джемом из смородиныㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ',
+      'булочка на натуральном сливочном масле с джемом из смородины',
     characteristics: {
       weight: '120g',
       price: '60 руб',
@@ -106,7 +106,7 @@ const productsData = [
   {
     image: 'images/buns-coffe-list/strawberry-pie.jpg',
     name: 'Пирог с клубникой',
-    description: 'нежное тесто с клубничным джемом в начинкеㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ',
+    description: 'нежное тесто с клубничным джемом в начинке',
     characteristics: {
       weight: '110g',
       price: '60 руб',
@@ -115,7 +115,7 @@ const productsData = [
   {
     image: 'images/buns-coffe-list/egg-pie.jpg',
     name: 'Пирог с яйцом и луком',
-    description: 'нежное тесто и ароматная начинка из яиц и лукаㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ',
+    description: 'нежное тесто и ароматная начинка из яиц и лука',
     characteristics: {
       weight: '120g',
       price: '60 руб',
@@ -124,7 +124,7 @@ const productsData = [
   {
     image: 'images/buns-coffe-list/liver-pie.jpg',
     name: 'Пирог с печенью',
-    description: 'вкусная булочка с начинкой из печени и картофеляㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ',
+    description: 'вкусная булочка с начинкой из печени и картофеля',
     characteristics: {
       weight: '120g',
       price: '60 руб',
@@ -133,7 +133,7 @@ const productsData = [
   {
     image: 'images/buns-coffe-list/julienne.jpg',
     name: 'Жюльен с курицей',
-    description: 'тонкое тесто с большим количеством куриного филе, грибов и сырной шапочкой сверхуㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ',
+    description: 'тонкое тесто с большим количеством куриного филе, грибов и сырной шапочкой сверху',
     characteristics: {
       weight: '120g',
       price: '85 руб',
@@ -142,7 +142,7 @@ const productsData = [
   {
     image: 'images/buns-coffe-list/cabbage.jpg',
     name: 'Пирог с капустой',
-    description: 'тушеная капуста в нежном тестеㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ',
+    description: 'тушеная капуста в нежном тесте',
     characteristics: {
       weight: '140g',
       price: '55 руб',
@@ -152,7 +152,7 @@ const productsData = [
     image: 'images/buns-coffe-list/gogal-cheese.jpg',
     name: 'Гогал с сыром',
     description:
-      'тонкое тесто, смазаное сливочным маслом с большим количеством сыра внутриㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ',
+      'тонкое тесто, смазаное сливочным маслом с большим количеством сыра внутри',
     characteristics: {
       weight: '140g',
       price: '130 руб',
@@ -162,7 +162,7 @@ const productsData = [
     image: 'images/buns-coffe-list/gogal.jpg',
     name: 'Гогал со специями',
     description:
-      'тонкое тесто, смазаное сливочным маслом со специями внутриㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ',
+      'тонкое тесто, смазаное сливочным маслом со специями внутри',
     characteristics: {
       weight: '120g',
       price: '140 руб',
